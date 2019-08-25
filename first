@@ -1,0 +1,76 @@
+import random
+
+def generate_values():
+
+   values_dict = {
+
+   'Accessability': [
+   'Apple is founded on giving people power to create things, to do things they couldn\'t do without those tools. -Tim Cook'
+   'It\'s a basic core value of Apple. We don\'t make products for a particular group of people. We make products for everybody. We feel very strongly that everyone deserves an equal opportunity and equal access. -Tim Cook'
+   'They\'re frequently left in the shadows of technological advancements that are a source of empowerment and attainment for others. -Tim Cook'
+   '...Apple\'s engineers push back against this unacceptable reality, they go to extraordinary lengths to make our products accessible to people with various disabilities from blindness and deafness to various muscular disorders. -Tim Cook'
+   'Last week I received an email from a single mom with a three year old autistic son who was completely non-verbal, and after receiving an iPad, for the first time in his life, he had found his voice. -Tim Cook'
+
+   ],
+
+   'Privacy & Security': [
+   'I\'m actually as proud of many of the things we haven\'t done as the things we have done. Steve Jobs'
+   'Unlike other companies Apple does not and will not ever sell our users information. We care too much about our own integrity and the integrity of our users to do that. -Joshua Sacks'
+   'It means that people know what they\'re signing up for. In plain English, and repeatedly. That\'s what it means. -Steve Jobs'
+   'We\'ve rejected a lot of apps that want to take a lot of your personal data, and suck it up into the cloud. -Steve Jobs'
+   'Some people want to share more than others.  Ask them.  Ask them every time.  Make them tell you to stop asking them if they get tired of your asking them. -Steve Jobs'
+
+   ],
+
+   'Enviornment': [
+   'Environmental challenges have the power to deny equality of opportunity and hold back the progress of communities. -Lisa Jackson'
+   'After 40 years of progress, the American people still believe in the first vision. A majority of Americans believe the economic and health benefits of clean air rules outweigh costs. -Lisa Jackson'
+   'Whether it\'s improving working conditions or the environment, standing up for human rights, helping eliminate AIDS, or reinventing education, Apple is making substantial contributions to society. -Tim Cook'
+   'We also try to change the world by the way we run the company. And whether that\'s being very focused on the environment and making sure that we have a no-carbon footprint, essentially, or running our company on 100 percent renewable energy. -Tim Cook'
+   'Apple has shown how innovation can drive real progress by removing toxics from its products, incorporating renewable energy in its data center plans, and continually raising the bar for energy efficiency in the electronics industry. -Lisa Jackson'
+
+   ],
+
+   'Education': [
+   'It is in Apples DNA that technology alone is not enough, its technology married with liberal arts, married with the humanities, that yields us the results that make our heart sing. -Steve Jobs',
+   'I\'m a very big believer in equal opportunity as opposed to equal outcome. Equal opportunity to me, more than anything, means a great education. Maybe even more important than a great family life. -Steve Jobs',
+   'It gave a tremendous level of self-confidence, that through exploration and learning one could understand seemingly very complex things in one\'s environment. -Steve Jobs',
+   'Once you discover one simple fact, and that is everything around you that you call life, was made up by people that were no smarter than you. -Steve Jobs'
+   'We shouldn\'t be afraid to fail, if we are not failing we are not pushing. 80 percent of the stuff in the studio is not going to work. If something is not good enough, stop doing it. -Jony Ive'
+   ],
+
+   'Inclusion & Diversity': [
+   'History rarely yields to one person, but think and never forget what happens when it does. That can be you. That should be you. That must be you. -Tim Cook',
+   'So if hearing that the CEO of Apple is gay can help someone struggling to come to terms with who he or she is, or bring comfort to anyone who feels alone, or inspire people to insist on their equality, then it\'s worth the trade-off with my own privacy. -Tim Cook',
+   'Part of social progress is understanding that a person is not defined only by one\'s sexuality, race, or gender. -Tim Cook',
+   'People that are not political. People that are not bureaucrats. People that really don\'t care who gets credit. People that can privately celebrate the achievement, but not care if their name is the one in the lights. There are greater reasons to do things. -Tim Cook',
+   'The doers are the major thinkers. The people that really create the things that change this industry are both the thinker and doer in one person. -Steve Jobs'
+   ],
+
+   'Supplier Responsibility': [
+   'We are about every worker in our worldwide supply chain... what we will not do -and never have done, is stand still or turn a blind eye to problems in our supply chian. On this you have my word. -Tim Cook'
+   'And, arguably, if people are treated as second-class citizens in any part of the world, then it\'s kind of hard to accomplish our objective. -Tim Cook'
+   'Together with our partners, we go above and beyond accepted industry practices to improve the lives of our suppliers\' employees while conserving the earth\'s resources for generations to come. -Craig Federighi'
+   'We believe that everyone making Apple products deserves to be treated with dignity and respect and we\'re proud that almost 15 million people understand their workplace rights as a result of the work we\'ve done over the years. -Eddy Cue'
+   'Apple goes deeper into the supply chain to find issues and fix them more than any other company in its industry and each year it will do more to raise the bar and protect the people who make Apple products as well as the planet. -Sabih Khan'
+
+   ]
+
+   }
+
+   return values_dict
+
+# print random.choice(generate_values().values())
+print ''
+
+for priorities,quotes in generate_values().iteritems():
+   print priorities
+   print ''
+   for quote in quotes:
+       print random.choice(quote)
+       print ''
+
+
+
+
+
